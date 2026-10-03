@@ -52,5 +52,9 @@
   },
   "engines": {
     "node": ">=22.6.0"
+  },
+  "allowScripts": {
+    "workerd@1.20261001.1": true,
+    "esbuild@0.28.1": true
   }
 }

@@ -181,7 +181,7 @@ export function LiquidBackground() {
     const canvas = ref.current;
     if (!canvas) return;
 
-    let tier: PerfTier = tierOverrideRef.current ?? detectPerfTier();
+    const tier: PerfTier = tierOverrideRef.current ?? detectPerfTier();
     canvas.style.display = "";
     const environmentQueries = [
       window.matchMedia("(pointer: coarse)"),
@@ -450,8 +450,8 @@ export function LiquidBackground() {
     let lost = false;
 
     const start = performance.now();
-    let targetFps = settings.fps;
-    let frameBudget = 1000 / targetFps;
+    const targetFps = settings.fps;
+    const frameBudget = 1000 / targetFps;
     let last = 0;
 
     // runtime watchdog — step the tier down if we keep missing the budget
