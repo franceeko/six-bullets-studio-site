@@ -17,7 +17,10 @@
     "check:fast": "npm run verify:workspace && npm run check:syntax && npm run lint && npm run typecheck && npm test",
     "verify:workspace": "node scripts/verify-workspace.mjs",
     "check:syntax": "node scripts/check-syntax.mjs",
-    "audit": "npm audit --audit-level=high"
+    "audit": "npm audit --audit-level=high",
+    "deploy": "npm run build && wrangler deploy",
+    "cf-typegen": "wrangler types",
+    "cf:dev": "wrangler dev"
   },
   "dependencies": {
     "@fontsource-variable/fraunces": "^5.2.9",
