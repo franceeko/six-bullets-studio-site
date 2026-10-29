@@ -47,3 +47,6 @@ sPath -Force
 
 .vercel
 .env*
+
+.agents/
+skills-lock.json
