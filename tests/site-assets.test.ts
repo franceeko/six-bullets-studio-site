@@ -95,6 +95,27 @@ test("below-fold section styles are loaded on approach rather than in global CSS
   assert.match(deferredStyles, /rootMargin: "500px"/);
 });
 
+test("reduced-motion preference loads section styles before observer setup", () => {
+  const deferredStyles = readFileSync(
+    join(process.cwd(), "src", "components", "layout", "DeferredSectionStyles.tsx"),
+    "utf8",
+  );
+  const reducedMotionBranch = deferredStyles.indexOf(
+    'if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {',
+  );
+  const eagerLoad = deferredStyles.indexOf(
+    "for (const [, href] of sectionStyles) loadStylesheet(href);",
+    reducedMotionBranch,
+  );
+  const earlyReturn = deferredStyles.indexOf("return;", eagerLoad);
+  const observer = deferredStyles.indexOf("new IntersectionObserver", earlyReturn);
+
+  assert.ok(reducedMotionBranch >= 0, "deferred styles must detect reduced motion");
+  assert.ok(eagerLoad > reducedMotionBranch, "reduced motion must load every section stylesheet");
+  assert.ok(earlyReturn > eagerLoad, "reduced-motion branch must return after loading styles");
+  assert.ok(observer > earlyReturn, "reduced-motion branch must bypass observer setup");
+});
+
 test("silent team portrait video is decorative to assistive technology", () => {
   const team = readFileSync(join(process.cwd(), "src", "components", "site", "Team.tsx"), "utf8");
   assert.match(team, /<video[\s\S]*?muted[\s\S]*?aria-hidden="true"/);

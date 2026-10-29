@@ -25,6 +25,11 @@ function loadStylesheet(href: string) {
 
 export function DeferredSectionStyles() {
   useEffect(() => {
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      for (const [, href] of sectionStyles) loadStylesheet(href);
+      return;
+    }
+
     if (!("IntersectionObserver" in window)) {
       for (const [, href] of sectionStyles) loadStylesheet(href);
       return;
