@@ -1,0 +1,9 @@
+node_modules
+dist
+.output
+.vinxi
+.vercel
+bun.lock
+src/routeTree.gen.ts
+# Workspace verification parses and validates deployment settings; formatting is not a deploy gate.
+vercel.json

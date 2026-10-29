@@ -1,0 +1,176 @@
+{
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+    "source.organizeImports": "explicit"
+  },
+
+  "eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact"],
+
+  "js/ts.tsdk.path": "./node_modules/typescript/lib",
+  "js/ts.suggest.autoImports": true,
+  "js/ts.updateImportsOnFileMove.enabled": "always",
+  "js/ts.preferences.includePackageJsonAutoImports": "auto",
+  "js/ts.tsserver.maxMemory": 3072,
+  "js/ts.tsserver.experimental.enableProjectDiagnostics": false,
+
+  "files.exclude": {
+    "**/.git": true,
+    "**/node_modules": true,
+    "**/.output": true,
+    "**/.vinxi": true,
+    "**/.cache": true,
+    "**/.turbo": true,
+    "**/.tanstack": true,
+    "**/dist": true,
+    "**/coverage": true
+  },
+
+  "search.exclude": {
+    "**/.git": true,
+    "**/node_modules": true,
+    "**/.output": true,
+    "**/.vinxi": true,
+    "**/.cache": true,
+    "**/.turbo": true,
+    "**/.tanstack": true,
+    "**/dist": true,
+    "**/coverage": true,
+    "**/*.lock": true,
+    "**/routeTree.gen.ts": true,
+    "**/*.png": true,
+    "**/*.jpg": true,
+    "**/*.jpeg": true,
+    "**/*.webp": true,
+    "**/*.gif": true,
+    "**/*.mp4": true,
+    "**/*.webm": true,
+    "**/*.mov": true
+  },
+
+  "files.watcherExclude": {
+    "**/.git/**": true,
+    "**/node_modules/**": true,
+    "**/.output/**": true,
+    "**/.vinxi/**": true,
+    "**/.cache/**": true,
+    "**/.turbo/**": true,
+    "**/.tanstack/**": true,
+    "**/dist/**": true,
+    "**/coverage/**": true,
+    "**/public/assets/**/*.png": true,
+    "**/public/assets/**/*.jpg": true,
+    "**/public/assets/**/*.jpeg": true,
+    "**/public/assets/**/*.webp": true,
+    "**/public/assets/**/*.gif": true,
+    "**/public/assets/**/*.mp4": true,
+    "**/public/assets/**/*.webm": true,
+    "**/public/assets/**/*.mov": true
+  },
+
+  "search.useIgnoreFiles": true,
+
+  "editor.largeFileOptimizations": true,
+  "editor.minimap.enabled": false,
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": true,
+  "editor.linkedEditing": true,
+  "editor.stickyScroll.enabled": true,
+  "editor.formatOnPaste": false,
+  "editor.formatOnType": false,
+
+  "git.autofetch": false,
+  "git.detectSubmodules": false,
+
+  "terminal.integrated.defaultProfile.windows": "PowerShell",
+
+  "cSpell.enabled": true,
+
+  "cSpell.enabledFileTypes": {
+    "markdown": true,
+    "plaintext": true,
+    "git-commit": false,
+
+    "javascript": false,
+    "javascriptreact": false,
+    "typescript": false,
+    "typescriptreact": false,
+
+    "json": false,
+    "jsonc": false,
+
+    "css": false,
+    "scss": false,
+    "less": false,
+    "html": false,
+
+    "yaml": false,
+    "toml": false,
+    "ignore": false
+  },
+
+  "cSpell.ignoreWords": ["fraunces", "fontsource", "fontsource-variable"],
+
+  "cSpell.words": [
+    "Bullets",
+    "CCU",
+    "Codex",
+    "CSP",
+    "DPR",
+    "Eater",
+    "ESLint",
+    "Fontsource",
+    "FPS",
+    "Framer",
+    "Francez",
+    "GPU",
+    "Happy",
+    "HiDPI",
+    "HSTS",
+    "JavaScript",
+    "Lucide",
+    "Marpuf",
+    "Nitro",
+    "njsproj",
+    "ntvs",
+    "OpenGraph",
+    "PowerShell",
+    "Prettier",
+    "React",
+    "Samuca",
+    "Six",
+    "SSR",
+    "Syntax",
+    "Tailwind",
+    "TanStack",
+    "Thugo",
+    "Town",
+    "TypeScript",
+    "Vinxi",
+    "Vite",
+    "WebGL",
+    "WebP",
+    "Whirle",
+    "Yuki",
+    "Zark"
+  ],
+
+  "cSpell.ignorePaths": [
+    "**/.git/**",
+    "**/node_modules/**",
+    "**/.output/**",
+    "**/.vinxi/**",
+    "**/.tanstack/**",
+    "**/.cache/**",
+    "**/.turbo/**",
+    "**/dist/**",
+    "**/coverage/**",
+    "**/*.lock",
+    "bun.lock",
+    "package-lock.json",
+    "**/*lock.json",
+    "src/routeTree.gen.ts"
+  ]
+}
