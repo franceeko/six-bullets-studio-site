@@ -9,3 +9,12 @@ bun.lock
 src/routeTree.gen.ts
 # Workspace verification parses and validates deployment settings; formatting is not a deploy gate.
 vercel.json
+
+.claude/
+.agents/
+.codex/
+lighthouse-report.json
+
+.agents/
+.codex/
+lighthouse-report.json

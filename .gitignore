@@ -54,3 +54,9 @@ skills-lock.json
 .playwright-cli/
 
 repomix-output.xml
+
+.claude/
+lighthouse-report.json
+
+.claude/
+lighthouse-report.json
