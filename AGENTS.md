@@ -1,84 +1,62 @@
-# Six Bullets Studio — Codex project instructions
+# Six Bullets Studio — Codex Instructions
 
-## Mission
+## Output & Token Discipline
 
-Keep the site production-safe, fast, resilient, responsive, accessible and visually polished. Preserve the existing Six Bullets visual language unless a redesign is explicitly requested.
+- Follow `caveman`, `token-saver-codex`, and `token-efficiency` rules on every turn.
+- Be terse: output code, diffs, and direct conclusions only. Skip intros, recaps, and obvious explanations.
+- Start here, then inspect only the target file and direct imports via `rg` or targeted line ranges.
+- Never open binary media (`.png`, `.webp`, `.mp4`), lockfiles, `node_modules/`, `.vercel/`, build output, or `src/routeTree.gen.ts`.
+- Never run `git status`, `git diff`, or `git log` across parent directories (`C:\Users\CLIENTE\.git` sits above this workspace); scope any git commands strictly to `.` or rely on `npm run check:fast`.
+- Apply edits in a single clean pass (`surgical-patch`). Never re-read a file just written or run repo-wide formatting (`npm run format`) unless explicitly requested.
 
-## Repository map
+## Mission & Visual Direction
 
-- `src/routes/index.tsx`: page composition and section mounting.
-- `src/routes/__root.tsx`: document shell, metadata, providers and route errors.
-- `src/components/site/`: Hero, About, Happy Town, Team, Contact.
-- `src/components/layout/`: navigation, intro, theme, footer, liquid background.
+- Keep the site production-safe, fast, resilient, accessible, and visually polished.
+- Preserve the existing Six Bullets visual language unless a redesign is explicitly requested.
+- When creating or refining UI, apply `frontend-design`, `impeccable`, `tailwind-design-system`, and `web-design-guidelines`. Avoid generic AI aesthetics.
+
+## Repository Map
+
+- `src/routes/__root.tsx`: document shell, metadata, font preloads, global providers, intro, liquid background, error/404 screens.
+- `src/routes/index.tsx`: homepage composition (`Hero`, `About`, `Team`, `Happy Town`, `FAQ`, `Contact`, `Footer`).
+- `src/components/site/`: Hero, About, Happy Town, Team, FAQ, Contact, shared primitives.
+- `src/components/layout/`: desktop nav, mobile dialog menu, intro, theme, footer, WebGL liquid background.
 - `src/components/perf/`: local error boundaries.
 - `src/lib/perf-profile.ts`: rendering budgets and device detection.
 - `src/lib/error-capture.ts`: side-effect-free server error logging helpers.
-- `src/lib/security-headers.ts`: response hardening headers.
-- `src/data/`: editable content and links.
-- `src/assets/index.ts`: typed media registry.
-- `src/styles.css`: design system, responsive rules, animations and fallbacks.
-- `scripts/verify-workspace.mjs`: cheap workspace sanity checks.
-- `scripts/check-syntax.mjs`: TypeScript/JS parse check.
+- `src/lib/security-headers.ts`: CSP and response hardening headers.
+- `src/server.ts` & `src/start.ts`: server response wrapper, error HTML, CSRF middleware.
+- `src/data/`: navigation, studio links, and team records (keep data separate from presentation).
+- `src/assets/index.ts`: typed media registry (`public/assets/team/`).
+- `src/styles.css` + deferred section stylesheets: design system, responsive rules, animations, fallbacks.
+- `scripts/verify-workspace.mjs` & `scripts/check-syntax.mjs`: fast workspace/parse checks.
 - `src/routeTree.gen.ts`: generated; never hand-edit.
 
-## Codex context economy
+## Performance & PageSpeed (Target 95–100 Mobile & Desktop)
 
-1. Start with `AGENTS.md`, then inspect only the target component and direct imports.
-2. Do not open PNG, WebP, MP4, lockfiles, `node_modules`, build output or generated route files unless required.
-3. Prefer `rg`, targeted reads and symbol navigation over directory dumps.
-4. Do not run repository-wide formatting for a local change unless requested.
-5. Codex is the primary coding agent; do not add another AI/autocomplete stack without a concrete need.
+- Apply `core-web-vitals`, `performance`, `pagespeed-optimizer`, `vercel-optimize`, and `vercel-react-best-practices`.
+- Keep global CSS lean; keep below-the-fold section stylesheets (`Team`, `Happy Town`, `FAQ`, `Contact`) deferred until 500px before viewport entry.
+- Preload critical `.woff2` font files directly in `__root.tsx` to break the stylesheet→font waterfall.
+- Keep intro hold/fade minimal (<= 300ms + 300ms, centered wordmark only) so it never delays Hero LCP.
+- Defer WebGL shader initialization via `requestIdleCallback` / post-LCP scheduling and respect `src/lib/perf-profile.ts` (300k pixel / 30fps cap, 12fps while scrolling, pause `rAF` when hidden).
+- Keep liquid background fallback layout-stable (`CLS = 0`).
+- Keep Marpuf media deferred until 200px before viewport; size team WebP assets to match rendered card dimensions with intrinsic `width`/`height` and `srcset`/`sizes`.
+- Animate `transform` and `opacity` only; avoid permanent `will-change` unless measured.
 
-## Performance
+## Reliability, Security & Responsive
 
-- Prefer transform/opacity animations over layout-triggering properties.
-- Keep section navigation anchors stable; do not reintroduce asynchronous smooth-scroll interception without testing rapid clicks and Contact bottom-scroll behavior.
-- The intro should remain a short centered wordmark only, with no loading text/stripes/corner labels.
-- Pause `requestAnimationFrame` loops when hidden or unavailable.
-- Never assume WebGL, high DPR, fast GPU or desktop input.
-- Keep media lazy and responsive with `srcset`/`sizes` where useful.
-- Prefer optimized WebP media and lightweight runtime fallbacks; avoid shipping duplicate source copies when they do not improve the visitor experience.
-- Avoid permanent `will-change` unless measured.
-- Avoid unnecessary third-party requests.
+- Failed media or lazy sections must never take down parent sections or the page (use `src/components/perf/` boundaries).
+- Keep section navigation anchors stable; preserve Tab-trap/Escape focus restoration on mobile menu and single-open FAQ accordion behavior.
+- Apply `typescript-advanced-types` (strict TS, zero `any`) and security best practices: never expose secrets in client code or `public/`, keep production CSP strict (loopback exception only for local Vite HMR), keep production source maps disabled, and add `rel="noopener noreferrer"` to external new-tab links.
+- Verify responsive layouts across `320x568`, `375x667`, `390x844`, `768x1024`, `1024x768`, `1280x720`, `1440x900`, `1920x1080`, and ultrawide using fluid sizing, `svh`/`dvh`, and safe-area insets.
 
-## Reliability
+## Validation (`verify-and-stop`)
 
-- A failed image/video must not take down its section.
-- A failed lazy section must not take down the entire page.
-- Server errors must not expose stack traces to visitors.
-- Keep the CSS-first animated background resilient across browsers, with reduced-motion support and native cursor behavior.
-- External links opened in new tabs require `noopener noreferrer`.
-
-## Security
-
-- Never put secrets, API keys or private tokens in client code or `public/`.
-- Keep production CSP/security headers restrictive. A local-only loopback exception may be used for Vite-injected styles/HMR, but never relax CSP for production origins.
-- Keep production source maps disabled unless there is a documented operational reason.
-- Keep user-facing error pages generic and detailed errors server-side only.
-
-## Responsive requirements
-
-Check at 320x568, 375x667, 390x844, 768x1024, 1024x768, 1280x720, 1440x900, 1920x1080 and ultrawide widths. Use fluid sizing, safe-area insets, `svh`/`dvh`, wrapping layouts and intrinsic media dimensions.
-
-## Code quality
-
-- Keep strict TypeScript and existing alias conventions.
-- Keep data separate from presentation.
-- Reuse existing primitives before adding dependencies.
-- Do not silently change team membership, public URLs, branding or copy.
-- Never hand-edit `src/routeTree.gen.ts`.
-
-## Validation
-
-Run the smallest relevant check first, then the full local suite when dependencies are installed:
+Run the smallest check first, then `check:fast` or `check:ci` (read-only; never run `prettier --write` in CI):
 
 ```powershell
-npm run verify:workspace
-npm run check:syntax
-npm run lint
-npm run typecheck
-npm test
-npm run build
+npm run check:fast
+npm run build:vercel
 ```
 
-Never claim a build or typecheck passed without actually running it.
+Never claim a check or build passed without actually running it. Record notable maintenance changes in `UI_CHANGELOG.md`.

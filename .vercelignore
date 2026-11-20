@@ -1,0 +1,24 @@
+# Workspace-only agent tooling
+.agents/
+skills-lock.json
+
+# Local secrets and deployment state
+.env*
+*.local
+*.pem
+*.key
+*.p12
+*.pfx
+.vercel/
+
+# Dependencies and generated output
+.git/
+node_modules/
+.output/
+dist/
+.wrangler/
+.vinxi/
+.tanstack/
+.nitro/
+coverage/
+.tmp-*
