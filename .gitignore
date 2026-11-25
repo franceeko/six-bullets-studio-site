@@ -60,3 +60,6 @@ lighthouse-report.json
 
 .claude/
 lighthouse-report.json
+
+.agents/
+repomix-output.xml
