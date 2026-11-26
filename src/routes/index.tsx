@@ -1,14 +1,26 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { lazy, Suspense, type ReactNode } from "react";
 
 import { Nav } from "@/components/layout/Nav";
 import { Footer } from "@/components/layout/Footer";
 import { SectionBoundary } from "@/components/perf/SectionBoundary";
 import { About } from "@/components/site/About";
-import { Contact } from "@/components/site/Contact";
-import { FAQ } from "@/components/site/FAQ";
-import { HappyTown } from "@/components/site/HappyTown";
 import { Hero } from "@/components/site/Hero";
-import { Team } from "@/components/site/Team";
+
+const Team = lazy(() => import("@/components/site/Team").then(({ Team }) => ({ default: Team })));
+const HappyTown = lazy(() =>
+  import("@/components/site/HappyTown").then(({ HappyTown }) => ({ default: HappyTown })),
+);
+const FAQ = lazy(() => import("@/components/site/FAQ").then(({ FAQ }) => ({ default: FAQ })));
+const Contact = lazy(() =>
+  import("@/components/site/Contact").then(({ Contact }) => ({ default: Contact })),
+);
+
+function DeferredSection({ children, minHeight }: { children: ReactNode; minHeight: string }) {
+  return (
+    <Suspense fallback={<div aria-hidden="true" style={{ minHeight }} />}>{children}</Suspense>
+  );
+}
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -38,16 +50,24 @@ function Index() {
         <Hero />
         <About />
         <SectionBoundary label="The team">
-          <Team />
+          <DeferredSection minHeight="72rem">
+            <Team />
+          </DeferredSection>
         </SectionBoundary>
         <SectionBoundary label="Happy Town">
-          <HappyTown />
+          <DeferredSection minHeight="64rem">
+            <HappyTown />
+          </DeferredSection>
         </SectionBoundary>
         <SectionBoundary label="FAQ">
-          <FAQ />
+          <DeferredSection minHeight="40rem">
+            <FAQ />
+          </DeferredSection>
         </SectionBoundary>
         <SectionBoundary label="Contact">
-          <Contact />
+          <DeferredSection minHeight="38rem">
+            <Contact />
+          </DeferredSection>
         </SectionBoundary>
       </main>
       <Footer />

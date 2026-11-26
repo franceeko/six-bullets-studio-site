@@ -1,4 +1,4 @@
-import { m } from "framer-motion";
+import { m, useMotionValue, useSpring } from "framer-motion";
 import { ArrowUpRight, Activity, Eye, Layers3 } from "lucide-react";
 import { useState } from "react";
 
@@ -14,13 +14,17 @@ const details = [
     icon: Layers3,
   },
   { label: "Platform", value: "Roblox", note: "R6-focused experience", icon: Activity },
-  { label: "Visits", value: "—", note: "Live after launch", icon: Eye },
+  { label: "Visits", value: "TBA", note: "Live after launch", icon: Eye },
 ];
 
 const chapters = ["The First Siren", "Happy Mall"];
 
 export function HappyTown() {
   const [failed, setFailed] = useState(false);
+  const ctaX = useMotionValue(0);
+  const ctaY = useMotionValue(0);
+  const magneticX = useSpring(ctaX, { stiffness: 220, damping: 24, mass: 0.35 });
+  const magneticY = useSpring(ctaY, { stiffness: 220, damping: 24, mass: 0.35 });
 
   return (
     <section id="happy-town" className="project-section" aria-labelledby="happy-town-title">
@@ -125,7 +129,22 @@ export function HappyTown() {
             target="_blank"
             rel="noopener noreferrer"
             className="project-cta"
-            whileHover={{ x: 7 }}
+            style={{ x: magneticX, y: magneticY }}
+            onPointerMove={(event) => {
+              if (
+                event.pointerType !== "mouse" ||
+                window.matchMedia("(prefers-reduced-motion: reduce)").matches
+              ) {
+                return;
+              }
+              const bounds = event.currentTarget.getBoundingClientRect();
+              ctaX.set(((event.clientX - bounds.left) / bounds.width - 0.5) * 6);
+              ctaY.set(((event.clientY - bounds.top) / bounds.height - 0.5) * 4);
+            }}
+            onPointerLeave={() => {
+              ctaX.set(0);
+              ctaY.set(0);
+            }}
           >
             <span>Follow development on Discord</span>
             <ArrowUpRight aria-hidden />

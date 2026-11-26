@@ -126,7 +126,7 @@ export const Route = createRootRoute({
         imageSizes: "(max-width: 639px) 84vw, (max-width: 1023px) 38vw, 34vw",
         fetchPriority: "high",
       },
-      { rel: "icon", type: "image/svg+xml", href: "/favicon.svg" },
+      { rel: "icon", type: "image/png", href: "/favicon.png" },
       { rel: "stylesheet", href: appCss },
     ],
   }),

@@ -1,0 +1,250 @@
+{
+  "url": "http://localhost:4173/",
+  "generatedAt": "2026-11-26T20:50:56.431Z",
+  "viewports": [
+    {
+      "name": "320x568 320x568",
+      "width": 320,
+      "height": 568,
+      "screenshot": "C:\\Users\\CLIENTE\\Downloads\\six-bullets-studio\\.parede\\audit\\2026-11-26T17-50-46\\320x568-320x568.png",
+      "overflowX": 0,
+      "issues": [
+        {
+          "targets": [
+            "a.skip-link (9px)",
+            "span (7px)",
+            "span (7px)",
+            "span (7px)",
+            "span (9px)",
+            "span (9px)",
+            "span (9px)",
+            "a.six-footer__link (9px)",
+            "span.six-footer__future (9px)",
+            "span (8px)",
+            "span.six-footer__future (9px)",
+            "span (8px)",
+            "span.six-footer__future (9px)",
+            "span (8px)",
+            "span.six-footer__future (9px)"
+          ],
+          "viewport": "320x568 320x568",
+          "id": "small-text",
+          "category": "responsive",
+          "severity": "warning",
+          "message": "text smaller than 12px on mobile"
+        }
+      ]
+    },
+    {
+      "name": "375x667 375x667",
+      "width": 375,
+      "height": 667,
+      "screenshot": "C:\\Users\\CLIENTE\\Downloads\\six-bullets-studio\\.parede\\audit\\2026-11-26T17-50-46\\375x667-375x667.png",
+      "overflowX": 0,
+      "issues": [
+        {
+          "targets": [
+            "a.skip-link (9px)",
+            "span (7px)",
+            "span (7px)",
+            "span (7px)",
+            "span (9px)",
+            "span (9px)",
+            "span (9px)",
+            "a.six-footer__link (9px)",
+            "span.six-footer__future (9px)",
+            "span (8px)",
+            "span.six-footer__future (9px)",
+            "span (8px)",
+            "span.six-footer__future (9px)",
+            "span (8px)",
+            "span.six-footer__future (9px)"
+          ],
+          "viewport": "375x667 375x667",
+          "id": "small-text",
+          "category": "responsive",
+          "severity": "warning",
+          "message": "text smaller than 12px on mobile"
+        }
+      ]
+    },
+    {
+      "name": "390x844 390x844",
+      "width": 390,
+      "height": 844,
+      "screenshot": "C:\\Users\\CLIENTE\\Downloads\\six-bullets-studio\\.parede\\audit\\2026-11-26T17-50-46\\390x844-390x844.png",
+      "overflowX": 0,
+      "issues": [
+        {
+          "targets": [
+            "a.skip-link (9px)",
+            "span (7px)",
+            "span (7px)",
+            "span (7px)",
+            "span (9px)",
+            "span (9px)",
+            "span (9px)",
+            "a.six-footer__link (9px)",
+            "span.six-footer__future (9px)",
+            "span (8px)",
+            "span.six-footer__future (9px)",
+            "span (8px)",
+            "span.six-footer__future (9px)",
+            "span (8px)",
+            "span.six-footer__future (9px)"
+          ],
+          "viewport": "390x844 390x844",
+          "id": "small-text",
+          "category": "responsive",
+          "severity": "warning",
+          "message": "text smaller than 12px on mobile"
+        }
+      ]
+    },
+    {
+      "name": "768x1024 768x1024",
+      "width": 768,
+      "height": 1024,
+      "screenshot": "C:\\Users\\CLIENTE\\Downloads\\six-bullets-studio\\.parede\\audit\\2026-11-26T17-50-46\\768x1024-768x1024.png",
+      "overflowX": 0,
+      "issues": []
+    },
+    {
+      "name": "1024x768 1024x768",
+      "width": 1024,
+      "height": 768,
+      "screenshot": "C:\\Users\\CLIENTE\\Downloads\\six-bullets-studio\\.parede\\audit\\2026-11-26T17-50-46\\1024x768-1024x768.png",
+      "overflowX": 0,
+      "issues": []
+    },
+    {
+      "name": "1280x720 1280x720",
+      "width": 1280,
+      "height": 720,
+      "screenshot": "C:\\Users\\CLIENTE\\Downloads\\six-bullets-studio\\.parede\\audit\\2026-11-26T17-50-46\\1280x720-1280x720.png",
+      "overflowX": 0,
+      "issues": []
+    },
+    {
+      "name": "1440x900 1440x900",
+      "width": 1440,
+      "height": 900,
+      "screenshot": "C:\\Users\\CLIENTE\\Downloads\\six-bullets-studio\\.parede\\audit\\2026-11-26T17-50-46\\1440x900-1440x900.png",
+      "overflowX": 0,
+      "issues": []
+    },
+    {
+      "name": "1920x1080 1920x1080",
+      "width": 1920,
+      "height": 1080,
+      "screenshot": "C:\\Users\\CLIENTE\\Downloads\\six-bullets-studio\\.parede\\audit\\2026-11-26T17-50-46\\1920x1080-1920x1080.png",
+      "overflowX": 0,
+      "issues": []
+    },
+    {
+      "name": "2560x1440 2560x1440",
+      "width": 2560,
+      "height": 1440,
+      "screenshot": "C:\\Users\\CLIENTE\\Downloads\\six-bullets-studio\\.parede\\audit\\2026-11-26T17-50-46\\2560x1440-2560x1440.png",
+      "overflowX": 0,
+      "issues": []
+    }
+  ],
+  "issues": [
+    {
+      "targets": [
+        "a.skip-link (9px)",
+        "span (7px)",
+        "span (7px)",
+        "span (7px)",
+        "span (9px)",
+        "span (9px)",
+        "span (9px)",
+        "a.six-footer__link (9px)",
+        "span.six-footer__future (9px)",
+        "span (8px)",
+        "span.six-footer__future (9px)",
+        "span (8px)",
+        "span.six-footer__future (9px)",
+        "span (8px)",
+        "span.six-footer__future (9px)"
+      ],
+      "viewport": "320x568 320x568",
+      "id": "small-text",
+      "category": "responsive",
+      "severity": "warning",
+      "message": "text smaller than 12px on mobile"
+    },
+    {
+      "targets": [
+        "a.skip-link (9px)",
+        "span (7px)",
+        "span (7px)",
+        "span (7px)",
+        "span (9px)",
+        "span (9px)",
+        "span (9px)",
+        "a.six-footer__link (9px)",
+        "span.six-footer__future (9px)",
+        "span (8px)",
+        "span.six-footer__future (9px)",
+        "span (8px)",
+        "span.six-footer__future (9px)",
+        "span (8px)",
+        "span.six-footer__future (9px)"
+      ],
+      "viewport": "375x667 375x667",
+      "id": "small-text",
+      "category": "responsive",
+      "severity": "warning",
+      "message": "text smaller than 12px on mobile"
+    },
+    {
+      "targets": [
+        "a.skip-link (9px)",
+        "span (7px)",
+        "span (7px)",
+        "span (7px)",
+        "span (9px)",
+        "span (9px)",
+        "span (9px)",
+        "a.six-footer__link (9px)",
+        "span.six-footer__future (9px)",
+        "span (8px)",
+        "span.six-footer__future (9px)",
+        "span (8px)",
+        "span.six-footer__future (9px)",
+        "span (8px)",
+        "span.six-footer__future (9px)"
+      ],
+      "viewport": "390x844 390x844",
+      "id": "small-text",
+      "category": "responsive",
+      "severity": "warning",
+      "message": "text smaller than 12px on mobile"
+    }
+  ],
+  "scores": {
+    "accessibility": 100,
+    "responsive": 95,
+    "performance": 100,
+    "console": 100,
+    "content": 100,
+    "seo": 100,
+    "motion": 100
+  },
+  "overall": 99,
+  "verdict": "approved",
+  "perf": {
+    "cls": 0,
+    "lcpMs": 436,
+    "lcpElement": "img",
+    "longTasks": 3,
+    "longTaskMs": 268,
+    "requests": 36,
+    "totalBytes": 1816546,
+    "jsBytes": 481436,
+    "fontFiles": 3
+  },
+  "reportFile": "C:\\Users\\CLIENTE\\Downloads\\six-bullets-studio\\.parede\\audit\\2026-11-26T17-50-46\\audit.md"
+}

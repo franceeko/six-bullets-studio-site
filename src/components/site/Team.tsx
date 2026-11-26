@@ -128,7 +128,6 @@ function MemberCard({
     >
       <m.div className="member-card-frame" style={{ rotateX, rotateY }}>
         <div className="member-card-topline">
-          <span>0{index + 1}</span>
           <span>{dev.tag}</span>
         </div>
         <div className="member-card-portrait-wrap">

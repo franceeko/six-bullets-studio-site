@@ -91,7 +91,7 @@
   background: #0f0f0f;
 }
 .member-card--featured .member-card-portrait-wrap {
-  aspect-ratio: 1.08 / 1;
+  aspect-ratio: 1 / 1;
 }
 .member-card-portrait-motion {
   position: absolute;

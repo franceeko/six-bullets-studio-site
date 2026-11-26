@@ -1,13 +1,18 @@
 import { m } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
+import { lazy, Suspense } from "react";
 import { useCallback, useEffect, useState } from "react";
 
-import { MobileMenu } from "@/components/layout/MobileMenu";
 import { navigationLinks } from "@/data/site";
 import { socialLinks } from "@/data/studio";
 
+const MobileMenu = lazy(() =>
+  import("@/components/layout/MobileMenu").then(({ MobileMenu }) => ({ default: MobileMenu })),
+);
+
 export function Nav() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [menuRequested, setMenuRequested] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [activeSection, setActiveSection] = useState("top");
   const closeMenu = useCallback(() => setMenuOpen(false), []);
@@ -261,7 +266,10 @@ export function Nav() {
               aria-label={menuOpen ? "Close navigation menu" : "Open navigation menu"}
               aria-expanded={menuOpen}
               aria-controls="mobile-navigation"
-              onClick={() => setMenuOpen((open) => !open)}
+              onClick={() => {
+                setMenuRequested(true);
+                setMenuOpen((open) => !open);
+              }}
               className="site-nav-menu"
             >
               <span aria-hidden className="site-nav-menu-line site-nav-menu-line--top" />
@@ -271,7 +279,19 @@ export function Nav() {
           </div>
         </nav>
       </m.header>
-      <MobileMenu open={menuOpen} onClose={closeMenu} links={navigationLinks} />
+      <Suspense
+        fallback={
+          menuOpen ? (
+            <div className="mobile-menu mobile-menu--open" role="status" aria-live="polite">
+              Loading navigation
+            </div>
+          ) : null
+        }
+      >
+        {menuRequested ? (
+          <MobileMenu open={menuOpen} onClose={closeMenu} links={navigationLinks} />
+        ) : null}
+      </Suspense>
     </>
   );
 }

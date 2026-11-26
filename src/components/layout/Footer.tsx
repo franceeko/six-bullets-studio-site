@@ -23,7 +23,7 @@ export function Footer() {
           </a>
 
           {futureSocials.map((label) => (
-            <span className="six-footer__future" key={label}>
+            <span className="six-footer__future" key={label} aria-disabled="true">
               {label}
               <span>Soon</span>
             </span>

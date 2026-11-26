@@ -1,0 +1,902 @@
+{
+  "url": "http://localhost:4173/",
+  "tested": 15,
+  "items": [
+    {
+      "selector": "a.skip-link",
+      "tag": "a",
+      "label": "SKIP TO CONTENT",
+      "cursor": "pointer",
+      "hover": {
+        "changes": [],
+        "transition": "transform 0.18s ease",
+        "magnetic": false
+      },
+      "focus": {
+        "changes": [
+          {
+            "target": "self",
+            "property": "outline-style",
+            "from": "none",
+            "to": "solid"
+          },
+          {
+            "target": "self",
+            "property": "outline-width",
+            "from": "3px",
+            "to": "2px"
+          },
+          {
+            "target": "self",
+            "property": "outline-offset",
+            "from": "0px",
+            "to": "4px"
+          },
+          {
+            "target": "self",
+            "property": "transform",
+            "from": "matrix(1, 0, 0, 1, 0, -79.2)",
+            "to": "matrix(1, 0, 0, 1, 0, 0)"
+          }
+        ],
+        "visible": true
+      },
+      "press": {
+        "changes": []
+      },
+      "shots": {
+        "before": "C:\\Users\\CLIENTE\\Downloads\\six-bullets-studio\\.parede\\interactions\\2026-11-26T17-45-59\\01-before.png",
+        "hover": "C:\\Users\\CLIENTE\\Downloads\\six-bullets-studio\\.parede\\interactions\\2026-11-26T17-45-59\\01-hover.png",
+        "focus": "C:\\Users\\CLIENTE\\Downloads\\six-bullets-studio\\.parede\\interactions\\2026-11-26T17-45-59\\01-focus.png"
+      },
+      "verdict": [
+        "no hover feedback: the element does not confirm it is clickable"
+      ]
+    },
+    {
+      "selector": "a.site-nav-brand",
+      "tag": "a",
+      "label": "Six Bullets home",
+      "cursor": "pointer",
+      "hover": {
+        "changes": [],
+        "transition": "",
+        "magnetic": false
+      },
+      "focus": {
+        "changes": [
+          {
+            "target": "self",
+            "property": "outline-style",
+            "from": "none",
+            "to": "solid"
+          },
+          {
+            "target": "self",
+            "property": "outline-width",
+            "from": "3px",
+            "to": "2px"
+          },
+          {
+            "target": "self",
+            "property": "outline-offset",
+            "from": "0px",
+            "to": "4px"
+          }
+        ],
+        "visible": true
+      },
+      "press": {
+        "changes": []
+      },
+      "shots": {
+        "before": "C:\\Users\\CLIENTE\\Downloads\\six-bullets-studio\\.parede\\interactions\\2026-11-26T17-45-59\\02-before.png",
+        "hover": "C:\\Users\\CLIENTE\\Downloads\\six-bullets-studio\\.parede\\interactions\\2026-11-26T17-45-59\\02-hover.png",
+        "focus": "C:\\Users\\CLIENTE\\Downloads\\six-bullets-studio\\.parede\\interactions\\2026-11-26T17-45-59\\02-focus.png"
+      },
+      "verdict": [
+        "no hover feedback: the element does not confirm it is clickable"
+      ]
+    },
+    {
+      "selector": "button.site-nav-menu",
+      "tag": "button",
+      "label": "Open navigation menu",
+      "cursor": "pointer",
+      "hover": {
+        "changes": [
+          {
+            "target": "self",
+            "property": "background-color",
+            "from": "rgba(0, 0, 0, 0)",
+            "to": "rgba(255, 255, 255, 0.06)"
+          },
+          {
+            "target": "self",
+            "property": "background-position",
+            "from": "0px 0px",
+            "to": "0% 0%"
+          },
+          {
+            "target": "self",
+            "property": "border-top-color",
+            "from": "rgba(244, 244, 244, 0.13)",
+            "to": "rgba(244, 244, 244, 0.25)"
+          },
+          {
+            "target": "self",
+            "property": "transform",
+            "from": "none",
+            "to": "matrix(1, 0, 0, 1, 0, -1)"
+          }
+        ],
+        "transition": "background-color 0.18s ease, border-color 0.18s  ease, transform 0.18s  ease",
+        "magnetic": false
+      },
+      "focus": {
+        "changes": [
+          {
+            "target": "self",
+            "property": "outline-style",
+            "from": "none",
+            "to": "solid"
+          },
+          {
+            "target": "self",
+            "property": "outline-width",
+            "from": "3px",
+            "to": "2px"
+          },
+          {
+            "target": "self",
+            "property": "outline-offset",
+            "from": "0px",
+            "to": "4px"
+          }
+        ],
+        "visible": true
+      },
+      "press": {
+        "changes": []
+      },
+      "shots": {
+        "before": "C:\\Users\\CLIENTE\\Downloads\\six-bullets-studio\\.parede\\interactions\\2026-11-26T17-45-59\\03-before.png",
+        "hover": "C:\\Users\\CLIENTE\\Downloads\\six-bullets-studio\\.parede\\interactions\\2026-11-26T17-45-59\\03-hover.png",
+        "focus": "C:\\Users\\CLIENTE\\Downloads\\six-bullets-studio\\.parede\\interactions\\2026-11-26T17-45-59\\03-focus.png"
+      },
+      "verdict": []
+    },
+    {
+      "selector": "a.hero-teaser:nth-of-type(1)",
+      "tag": "a",
+      "label": "CURRENT PROJECT CHAPTER-BASED HORROR / INVESTIGATION Happy T",
+      "cursor": "pointer",
+      "hover": {
+        "changes": [
+          {
+            "target": "self",
+            "property": "border-top-color",
+            "from": "rgba(255, 255, 255, 0.2)",
+            "to": "rgba(255, 255, 255, 0.48)"
+          },
+          {
+            "target": "self",
+            "property": "box-shadow",
+            "from": "rgba(0, 0, 0, 0.85) 0px 34px 92px -48px",
+            "to": "rgba(255, 255, 255, 0.1) 0px 28px 78px -42px, rgba(0, 0, 0, 0.9) 0px 28px 78px -48px"
+          }
+        ],
+        "transition": "transform 0.42s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.28s  ease, box-shadow 0.42s  ease",
+        "magnetic": false
+      },
+      "focus": {
+        "changes": [
+          {
+            "target": "self",
+            "property": "border-top-color",
+            "from": "rgba(255, 255, 255, 0.2)",
+            "to": "rgba(255, 255, 255, 0.48)"
+          },
+          {
+            "target": "self",
+            "property": "box-shadow",
+            "from": "rgba(0, 0, 0, 0.85) 0px 34px 92px -48px",
+            "to": "rgba(164, 164, 164, 0.15) 0px 28.3753px 78.8756px -42.3753px, rgba(0, 0, 0, 0.847) 0px 26.2488px 73.1217px -44.998px"
+          },
+          {
+            "target": "self",
+            "property": "outline-style",
+            "from": "none",
+            "to": "solid"
+          },
+          {
+            "target": "self",
+            "property": "outline-width",
+            "from": "3px",
+            "to": "2px"
+          },
+          {
+            "target": "self",
+            "property": "outline-offset",
+            "from": "0px",
+            "to": "4px"
+          }
+        ],
+        "visible": true
+      },
+      "press": {
+        "changes": []
+      },
+      "shots": {
+        "before": "C:\\Users\\CLIENTE\\Downloads\\six-bullets-studio\\.parede\\interactions\\2026-11-26T17-45-59\\04-before.png",
+        "hover": "C:\\Users\\CLIENTE\\Downloads\\six-bullets-studio\\.parede\\interactions\\2026-11-26T17-45-59\\04-hover.png",
+        "focus": "C:\\Users\\CLIENTE\\Downloads\\six-bullets-studio\\.parede\\interactions\\2026-11-26T17-45-59\\04-focus.png"
+      },
+      "verdict": []
+    },
+    {
+      "selector": "a.hero-scroll:nth-of-type(2)",
+      "tag": "a",
+      "label": "SCROLL TO EXPLORE",
+      "cursor": "pointer",
+      "hover": {
+        "changes": [],
+        "transition": "",
+        "magnetic": false
+      },
+      "focus": {
+        "changes": [
+          {
+            "target": "self",
+            "property": "outline-style",
+            "from": "none",
+            "to": "solid"
+          },
+          {
+            "target": "self",
+            "property": "outline-width",
+            "from": "3px",
+            "to": "2px"
+          },
+          {
+            "target": "self",
+            "property": "outline-color",
+            "from": "rgba(244, 244, 244, 0.5)",
+            "to": "rgb(244, 244, 244)"
+          },
+          {
+            "target": "self",
+            "property": "outline-offset",
+            "from": "0px",
+            "to": "4px"
+          }
+        ],
+        "visible": true
+      },
+      "press": {
+        "changes": []
+      },
+      "shots": {
+        "before": "C:\\Users\\CLIENTE\\Downloads\\six-bullets-studio\\.parede\\interactions\\2026-11-26T17-45-59\\05-before.png",
+        "hover": "C:\\Users\\CLIENTE\\Downloads\\six-bullets-studio\\.parede\\interactions\\2026-11-26T17-45-59\\05-hover.png",
+        "focus": "C:\\Users\\CLIENTE\\Downloads\\six-bullets-studio\\.parede\\interactions\\2026-11-26T17-45-59\\05-focus.png"
+      },
+      "verdict": [
+        "no hover feedback: the element does not confirm it is clickable"
+      ]
+    },
+    {
+      "selector": "a.project-cta",
+      "tag": "a",
+      "label": "FOLLOW DEVELOPMENT ON DISCORD",
+      "cursor": "pointer",
+      "hover": {
+        "changes": [
+          {
+            "target": "self",
+            "property": "color",
+            "from": "rgb(244, 244, 244)",
+            "to": "rgb(237, 237, 237)"
+          },
+          {
+            "target": "self",
+            "property": "outline-color",
+            "from": "rgb(244, 244, 244)",
+            "to": "rgb(237, 237, 237)"
+          },
+          {
+            "target": "self",
+            "property": "transform",
+            "from": "none",
+            "to": "matrix(1, 0, 0, 1, 7, 0)"
+          },
+          {
+            "target": "child",
+            "property": "color",
+            "from": "rgb(244, 244, 244)",
+            "to": "rgb(237, 237, 237)"
+          },
+          {
+            "target": "child",
+            "property": "outline-color",
+            "from": "rgb(244, 244, 244)",
+            "to": "rgb(237, 237, 237)"
+          }
+        ],
+        "transition": "color 0.18s ease",
+        "magnetic": false
+      },
+      "focus": {
+        "changes": [
+          {
+            "target": "self",
+            "property": "outline-style",
+            "from": "none",
+            "to": "solid"
+          },
+          {
+            "target": "self",
+            "property": "outline-width",
+            "from": "3px",
+            "to": "2px"
+          },
+          {
+            "target": "self",
+            "property": "outline-offset",
+            "from": "0px",
+            "to": "4px"
+          }
+        ],
+        "visible": true
+      },
+      "press": {
+        "changes": []
+      },
+      "shots": {
+        "before": "C:\\Users\\CLIENTE\\Downloads\\six-bullets-studio\\.parede\\interactions\\2026-11-26T17-45-59\\06-before.png",
+        "hover": "C:\\Users\\CLIENTE\\Downloads\\six-bullets-studio\\.parede\\interactions\\2026-11-26T17-45-59\\06-hover.png",
+        "focus": "C:\\Users\\CLIENTE\\Downloads\\six-bullets-studio\\.parede\\interactions\\2026-11-26T17-45-59\\06-focus.png"
+      },
+      "verdict": []
+    },
+    {
+      "selector": "div.six-faq__item.is-open:nth-of-type(1) > button.six-faq__question",
+      "tag": "button",
+      "label": "01 What is Six Bullets Studio?",
+      "cursor": "pointer",
+      "hover": {
+        "changes": [],
+        "transition": "",
+        "magnetic": false
+      },
+      "focus": {
+        "changes": [
+          {
+            "target": "self",
+            "property": "outline-style",
+            "from": "none",
+            "to": "solid"
+          },
+          {
+            "target": "self",
+            "property": "outline-width",
+            "from": "3px",
+            "to": "1px"
+          },
+          {
+            "target": "self",
+            "property": "outline-color",
+            "from": "rgb(244, 244, 244)",
+            "to": "rgb(237, 237, 237)"
+          },
+          {
+            "target": "self",
+            "property": "outline-offset",
+            "from": "0px",
+            "to": "3px"
+          }
+        ],
+        "visible": true
+      },
+      "press": {
+        "changes": []
+      },
+      "shots": {
+        "before": "C:\\Users\\CLIENTE\\Downloads\\six-bullets-studio\\.parede\\interactions\\2026-11-26T17-45-59\\07-before.png",
+        "hover": "C:\\Users\\CLIENTE\\Downloads\\six-bullets-studio\\.parede\\interactions\\2026-11-26T17-45-59\\07-hover.png",
+        "focus": "C:\\Users\\CLIENTE\\Downloads\\six-bullets-studio\\.parede\\interactions\\2026-11-26T17-45-59\\07-focus.png"
+      },
+      "verdict": [
+        "no hover feedback: the element does not confirm it is clickable"
+      ]
+    },
+    {
+      "selector": "div.six-faq__item:nth-of-type(2) > button.six-faq__question",
+      "tag": "button",
+      "label": "02 What are you working on?",
+      "cursor": "pointer",
+      "hover": {
+        "changes": [],
+        "transition": "",
+        "magnetic": false
+      },
+      "focus": {
+        "changes": [
+          {
+            "target": "self",
+            "property": "outline-style",
+            "from": "none",
+            "to": "solid"
+          },
+          {
+            "target": "self",
+            "property": "outline-width",
+            "from": "3px",
+            "to": "1px"
+          },
+          {
+            "target": "self",
+            "property": "outline-color",
+            "from": "rgb(244, 244, 244)",
+            "to": "rgb(237, 237, 237)"
+          },
+          {
+            "target": "self",
+            "property": "outline-offset",
+            "from": "0px",
+            "to": "3px"
+          }
+        ],
+        "visible": true
+      },
+      "press": {
+        "changes": []
+      },
+      "shots": {
+        "before": "C:\\Users\\CLIENTE\\Downloads\\six-bullets-studio\\.parede\\interactions\\2026-11-26T17-45-59\\08-before.png",
+        "hover": "C:\\Users\\CLIENTE\\Downloads\\six-bullets-studio\\.parede\\interactions\\2026-11-26T17-45-59\\08-hover.png",
+        "focus": "C:\\Users\\CLIENTE\\Downloads\\six-bullets-studio\\.parede\\interactions\\2026-11-26T17-45-59\\08-focus.png"
+      },
+      "verdict": [
+        "no hover feedback: the element does not confirm it is clickable"
+      ]
+    },
+    {
+      "selector": "div.six-faq__item:nth-of-type(3) > button.six-faq__question",
+      "tag": "button",
+      "label": "03 Can I play Happy Town yet?",
+      "cursor": "pointer",
+      "hover": {
+        "changes": [],
+        "transition": "",
+        "magnetic": false
+      },
+      "focus": {
+        "changes": [
+          {
+            "target": "self",
+            "property": "outline-style",
+            "from": "none",
+            "to": "solid"
+          },
+          {
+            "target": "self",
+            "property": "outline-width",
+            "from": "3px",
+            "to": "1px"
+          },
+          {
+            "target": "self",
+            "property": "outline-color",
+            "from": "rgb(244, 244, 244)",
+            "to": "rgb(237, 237, 237)"
+          },
+          {
+            "target": "self",
+            "property": "outline-offset",
+            "from": "0px",
+            "to": "3px"
+          }
+        ],
+        "visible": true
+      },
+      "press": {
+        "changes": []
+      },
+      "shots": {
+        "before": "C:\\Users\\CLIENTE\\Downloads\\six-bullets-studio\\.parede\\interactions\\2026-11-26T17-45-59\\09-before.png",
+        "hover": "C:\\Users\\CLIENTE\\Downloads\\six-bullets-studio\\.parede\\interactions\\2026-11-26T17-45-59\\09-hover.png",
+        "focus": "C:\\Users\\CLIENTE\\Downloads\\six-bullets-studio\\.parede\\interactions\\2026-11-26T17-45-59\\09-focus.png"
+      },
+      "verdict": [
+        "no hover feedback: the element does not confirm it is clickable"
+      ]
+    },
+    {
+      "selector": "div.six-faq__item:nth-of-type(4) > button.six-faq__question",
+      "tag": "button",
+      "label": "04 Can I join the team?",
+      "cursor": "pointer",
+      "hover": {
+        "changes": [],
+        "transition": "",
+        "magnetic": false
+      },
+      "focus": {
+        "changes": [
+          {
+            "target": "self",
+            "property": "outline-style",
+            "from": "none",
+            "to": "solid"
+          },
+          {
+            "target": "self",
+            "property": "outline-width",
+            "from": "3px",
+            "to": "1px"
+          },
+          {
+            "target": "self",
+            "property": "outline-color",
+            "from": "rgb(244, 244, 244)",
+            "to": "rgb(237, 237, 237)"
+          },
+          {
+            "target": "self",
+            "property": "outline-offset",
+            "from": "0px",
+            "to": "3px"
+          }
+        ],
+        "visible": true
+      },
+      "press": {
+        "changes": []
+      },
+      "shots": {
+        "before": "C:\\Users\\CLIENTE\\Downloads\\six-bullets-studio\\.parede\\interactions\\2026-11-26T17-45-59\\10-before.png",
+        "hover": "C:\\Users\\CLIENTE\\Downloads\\six-bullets-studio\\.parede\\interactions\\2026-11-26T17-45-59\\10-hover.png",
+        "focus": "C:\\Users\\CLIENTE\\Downloads\\six-bullets-studio\\.parede\\interactions\\2026-11-26T17-45-59\\10-focus.png"
+      },
+      "verdict": [
+        "no hover feedback: the element does not confirm it is clickable"
+      ]
+    },
+    {
+      "selector": "div.six-faq__item:nth-of-type(5) > button.six-faq__question",
+      "tag": "button",
+      "label": "05 Are you open to partnerships?",
+      "cursor": "pointer",
+      "hover": {
+        "changes": [],
+        "transition": "",
+        "magnetic": false
+      },
+      "focus": {
+        "changes": [
+          {
+            "target": "self",
+            "property": "outline-style",
+            "from": "none",
+            "to": "solid"
+          },
+          {
+            "target": "self",
+            "property": "outline-width",
+            "from": "3px",
+            "to": "1px"
+          },
+          {
+            "target": "self",
+            "property": "outline-color",
+            "from": "rgb(244, 244, 244)",
+            "to": "rgb(237, 237, 237)"
+          },
+          {
+            "target": "self",
+            "property": "outline-offset",
+            "from": "0px",
+            "to": "3px"
+          }
+        ],
+        "visible": true
+      },
+      "press": {
+        "changes": []
+      },
+      "shots": {
+        "before": "C:\\Users\\CLIENTE\\Downloads\\six-bullets-studio\\.parede\\interactions\\2026-11-26T17-45-59\\11-before.png",
+        "hover": "C:\\Users\\CLIENTE\\Downloads\\six-bullets-studio\\.parede\\interactions\\2026-11-26T17-45-59\\11-hover.png",
+        "focus": "C:\\Users\\CLIENTE\\Downloads\\six-bullets-studio\\.parede\\interactions\\2026-11-26T17-45-59\\11-focus.png"
+      },
+      "verdict": [
+        "no hover feedback: the element does not confirm it is clickable"
+      ]
+    },
+    {
+      "selector": "div.six-faq__item:nth-of-type(6) > button.six-faq__question",
+      "tag": "button",
+      "label": "06 Where can I follow updates?",
+      "cursor": "pointer",
+      "hover": {
+        "changes": [],
+        "transition": "",
+        "magnetic": false
+      },
+      "focus": {
+        "changes": [
+          {
+            "target": "self",
+            "property": "outline-style",
+            "from": "none",
+            "to": "solid"
+          },
+          {
+            "target": "self",
+            "property": "outline-width",
+            "from": "3px",
+            "to": "1px"
+          },
+          {
+            "target": "self",
+            "property": "outline-color",
+            "from": "rgb(244, 244, 244)",
+            "to": "rgb(237, 237, 237)"
+          },
+          {
+            "target": "self",
+            "property": "outline-offset",
+            "from": "0px",
+            "to": "3px"
+          }
+        ],
+        "visible": true
+      },
+      "press": {
+        "changes": []
+      },
+      "shots": {
+        "before": "C:\\Users\\CLIENTE\\Downloads\\six-bullets-studio\\.parede\\interactions\\2026-11-26T17-45-59\\12-before.png",
+        "hover": "C:\\Users\\CLIENTE\\Downloads\\six-bullets-studio\\.parede\\interactions\\2026-11-26T17-45-59\\12-hover.png",
+        "focus": "C:\\Users\\CLIENTE\\Downloads\\six-bullets-studio\\.parede\\interactions\\2026-11-26T17-45-59\\12-focus.png"
+      },
+      "verdict": [
+        "no hover feedback: the element does not confirm it is clickable"
+      ]
+    },
+    {
+      "selector": "a.contact-link:nth-of-type(1)",
+      "tag": "a",
+      "label": "01 Discord",
+      "cursor": "pointer",
+      "hover": {
+        "changes": [
+          {
+            "target": "self",
+            "property": "color",
+            "from": "rgb(244, 244, 244)",
+            "to": "rgb(255, 255, 255)"
+          },
+          {
+            "target": "self",
+            "property": "background-position",
+            "from": "0% 0%",
+            "to": "0px 0px"
+          },
+          {
+            "target": "self",
+            "property": "outline-color",
+            "from": "rgb(244, 244, 244)",
+            "to": "rgb(255, 255, 255)"
+          },
+          {
+            "target": "self",
+            "property": "opacity",
+            "from": "0.999996",
+            "to": "1"
+          },
+          {
+            "target": "child",
+            "property": "color",
+            "from": "rgb(244, 244, 244)",
+            "to": "rgb(255, 255, 255)"
+          },
+          {
+            "target": "child",
+            "property": "outline-color",
+            "from": "rgb(244, 244, 244)",
+            "to": "rgb(255, 255, 255)"
+          },
+          {
+            "target": "child",
+            "property": "transform",
+            "from": "matrix(1, 0, 0, 1, 0, 0)",
+            "to": "matrix(1, 0, 0, 1, 6.4, 0)"
+          }
+        ],
+        "transition": "color 0.18s ease",
+        "magnetic": false
+      },
+      "focus": {
+        "changes": [
+          {
+            "target": "self",
+            "property": "outline-style",
+            "from": "none",
+            "to": "solid"
+          },
+          {
+            "target": "self",
+            "property": "outline-width",
+            "from": "3px",
+            "to": "1px"
+          },
+          {
+            "target": "self",
+            "property": "outline-offset",
+            "from": "0px",
+            "to": "5px"
+          },
+          {
+            "target": "self",
+            "property": "opacity",
+            "from": "0.999996",
+            "to": "1"
+          },
+          {
+            "target": "child",
+            "property": "transform",
+            "from": "matrix(1, 0, 0, 1, 0, 0)",
+            "to": "matrix(1, 0, 0, 1, 6.39617, 0)"
+          }
+        ],
+        "visible": true
+      },
+      "press": {
+        "changes": []
+      },
+      "shots": {
+        "before": "C:\\Users\\CLIENTE\\Downloads\\six-bullets-studio\\.parede\\interactions\\2026-11-26T17-45-59\\13-before.png",
+        "hover": "C:\\Users\\CLIENTE\\Downloads\\six-bullets-studio\\.parede\\interactions\\2026-11-26T17-45-59\\13-hover.png",
+        "focus": "C:\\Users\\CLIENTE\\Downloads\\six-bullets-studio\\.parede\\interactions\\2026-11-26T17-45-59\\13-focus.png"
+      },
+      "verdict": []
+    },
+    {
+      "selector": "a.contact-link:nth-of-type(2)",
+      "tag": "a",
+      "label": "02 Roblox Group",
+      "cursor": "pointer",
+      "hover": {
+        "changes": [
+          {
+            "target": "self",
+            "property": "color",
+            "from": "rgb(244, 244, 244)",
+            "to": "rgb(255, 255, 255)"
+          },
+          {
+            "target": "self",
+            "property": "background-position",
+            "from": "0% 0%",
+            "to": "0px 0px"
+          },
+          {
+            "target": "self",
+            "property": "outline-color",
+            "from": "rgb(244, 244, 244)",
+            "to": "rgb(255, 255, 255)"
+          },
+          {
+            "target": "child",
+            "property": "color",
+            "from": "rgb(244, 244, 244)",
+            "to": "rgb(255, 255, 255)"
+          },
+          {
+            "target": "child",
+            "property": "outline-color",
+            "from": "rgb(244, 244, 244)",
+            "to": "rgb(255, 255, 255)"
+          },
+          {
+            "target": "child",
+            "property": "transform",
+            "from": "matrix(1, 0, 0, 1, 0, 0)",
+            "to": "matrix(1, 0, 0, 1, 6.4, 0)"
+          }
+        ],
+        "transition": "color 0.18s ease",
+        "magnetic": false
+      },
+      "focus": {
+        "changes": [
+          {
+            "target": "self",
+            "property": "outline-style",
+            "from": "none",
+            "to": "solid"
+          },
+          {
+            "target": "self",
+            "property": "outline-width",
+            "from": "3px",
+            "to": "1px"
+          },
+          {
+            "target": "self",
+            "property": "outline-offset",
+            "from": "0px",
+            "to": "5px"
+          },
+          {
+            "target": "child",
+            "property": "transform",
+            "from": "matrix(1, 0, 0, 1, 0, 0)",
+            "to": "matrix(1, 0, 0, 1, 6.39056, 0)"
+          }
+        ],
+        "visible": true
+      },
+      "press": {
+        "changes": []
+      },
+      "shots": {
+        "before": "C:\\Users\\CLIENTE\\Downloads\\six-bullets-studio\\.parede\\interactions\\2026-11-26T17-45-59\\14-before.png",
+        "hover": "C:\\Users\\CLIENTE\\Downloads\\six-bullets-studio\\.parede\\interactions\\2026-11-26T17-45-59\\14-hover.png",
+        "focus": "C:\\Users\\CLIENTE\\Downloads\\six-bullets-studio\\.parede\\interactions\\2026-11-26T17-45-59\\14-focus.png"
+      },
+      "verdict": []
+    },
+    {
+      "selector": "div.contact-bottom:nth-of-type(2) > a",
+      "tag": "a",
+      "label": "BACK TO TOP",
+      "cursor": "pointer",
+      "hover": {
+        "changes": [],
+        "transition": "",
+        "magnetic": false
+      },
+      "focus": {
+        "changes": [
+          {
+            "target": "self",
+            "property": "outline-style",
+            "from": "none",
+            "to": "solid"
+          },
+          {
+            "target": "self",
+            "property": "outline-width",
+            "from": "3px",
+            "to": "2px"
+          },
+          {
+            "target": "self",
+            "property": "outline-offset",
+            "from": "0px",
+            "to": "4px"
+          }
+        ],
+        "visible": true
+      },
+      "press": {
+        "changes": []
+      },
+      "shots": {
+        "before": "C:\\Users\\CLIENTE\\Downloads\\six-bullets-studio\\.parede\\interactions\\2026-11-26T17-45-59\\15-before.png",
+        "hover": "C:\\Users\\CLIENTE\\Downloads\\six-bullets-studio\\.parede\\interactions\\2026-11-26T17-45-59\\15-hover.png",
+        "focus": "C:\\Users\\CLIENTE\\Downloads\\six-bullets-studio\\.parede\\interactions\\2026-11-26T17-45-59\\15-focus.png"
+      },
+      "verdict": [
+        "no hover feedback: the element does not confirm it is clickable"
+      ]
+    }
+  ],
+  "sheet": "C:\\Users\\CLIENTE\\Downloads\\six-bullets-studio\\.parede\\interactions\\2026-11-26T17-45-59\\interactions.png",
+  "withoutHoverFeedback": 10,
+  "withoutFocusIndicator": 0,
+  "magnetic": 0
+}

@@ -1,0 +1,94 @@
+{
+  "url": "http://localhost:4173/",
+  "tested": 1,
+  "items": [
+    {
+      "selector": ".project-cta",
+      "tag": "a",
+      "label": "",
+      "cursor": "pointer",
+      "hover": {
+        "changes": [
+          {
+            "target": "self",
+            "property": "color",
+            "from": "rgb(244, 244, 244)",
+            "to": "rgb(237, 237, 237)"
+          },
+          {
+            "target": "self",
+            "property": "outline-color",
+            "from": "rgb(244, 244, 244)",
+            "to": "rgb(237, 237, 237)"
+          },
+          {
+            "target": "child",
+            "property": "color",
+            "from": "rgb(244, 244, 244)",
+            "to": "rgb(237, 237, 237)"
+          },
+          {
+            "target": "child",
+            "property": "outline-color",
+            "from": "rgb(244, 244, 244)",
+            "to": "rgb(237, 237, 237)"
+          }
+        ],
+        "transition": "color 0.18s ease",
+        "magnetic": true
+      },
+      "focus": {
+        "changes": [
+          {
+            "target": "self",
+            "property": "outline-style",
+            "from": "none",
+            "to": "solid"
+          },
+          {
+            "target": "self",
+            "property": "outline-width",
+            "from": "3px",
+            "to": "2px"
+          },
+          {
+            "target": "self",
+            "property": "outline-offset",
+            "from": "0px",
+            "to": "4px"
+          },
+          {
+            "target": "self",
+            "property": "transform",
+            "from": "none",
+            "to": "matrix(1, 0, 0, 1, 0.0009404, 0)"
+          }
+        ],
+        "visible": true
+      },
+      "press": {
+        "changes": [
+          {
+            "target": "self",
+            "property": "transform",
+            "from": "none",
+            "to": "matrix(1, 0, 0, 1, 0.343263, 0.115194)"
+          }
+        ]
+      },
+      "shots": {
+        "before": null,
+        "hover": null,
+        "focus": null
+      },
+      "verdict": [
+        "magnetic effect detected",
+        "an :active state with tactile response"
+      ]
+    }
+  ],
+  "sheet": null,
+  "withoutHoverFeedback": 0,
+  "withoutFocusIndicator": 0,
+  "magnetic": 1
+}

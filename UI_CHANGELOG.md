@@ -82,3 +82,10 @@
 - The liquid background remains native WebGL with a finite pixel budget and CSS fallback.
 - The site retains the existing black/cream/wine visual identity, optimized responsive media, team content and project artwork.
 - Production source maps remain disabled and no deployment is triggered by local validation scripts.
+
+## 2026-11-26 — Performance and interface refinement
+
+- Split below-fold sections and mobile navigation into lazy chunks with reserved fallbacks.
+- Removed member-card numbering, updated Happy Town visits to TBA, and styled future social channels as disabled badges.
+- Added cursor-magnetic project CTA feedback and raised small contact metadata contrast.
+- Standardized featured portraits to square crops, preserved banner ratio, strengthened brand accent, and raised navigation targets to 44px.

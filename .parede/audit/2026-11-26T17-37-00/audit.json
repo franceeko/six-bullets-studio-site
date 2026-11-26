@@ -1,0 +1,161 @@
+{
+  "url": "http://127.0.0.1:4173/",
+  "generatedAt": "2026-11-26T20:37:05.506Z",
+  "viewports": [
+    {
+      "name": "desktop 1440x900",
+      "width": 1440,
+      "height": 900,
+      "screenshot": "C:\\Users\\CLIENTE\\Downloads\\six-bullets-studio\\.parede\\audit\\2026-11-26T17-37-00\\desktop-1440x900.png",
+      "overflowX": 0,
+      "issues": []
+    },
+    {
+      "name": "mobile 390x844",
+      "width": 390,
+      "height": 844,
+      "screenshot": "C:\\Users\\CLIENTE\\Downloads\\six-bullets-studio\\.parede\\audit\\2026-11-26T17-37-00\\mobile-390x844.png",
+      "overflowX": 0,
+      "issues": [
+        {
+          "targets": [
+            "a.skip-link (126×34)",
+            "a.site-nav-brand (85×21)",
+            "a.hero-scroll (112×12)",
+            "a.six-footer__brand (98×26)",
+            "a.six-footer__link (86×14)"
+          ],
+          "viewport": "mobile 390x844",
+          "id": "tap-comfort",
+          "category": "responsive",
+          "severity": "warning",
+          "message": "5 target(s) below 44px (comfortable for the thumb)"
+        },
+        {
+          "targets": [
+            "a.skip-link (9px)",
+            "span (7px)",
+            "span (7px)",
+            "span (7px)",
+            "span (9px)",
+            "span (9px)",
+            "span (9px)",
+            "a.six-footer__link (9px)",
+            "span.six-footer__future (9px)",
+            "span (8px)",
+            "span.six-footer__future (9px)",
+            "span (8px)",
+            "span.six-footer__future (9px)",
+            "span (8px)",
+            "span.six-footer__future (9px)"
+          ],
+          "viewport": "mobile 390x844",
+          "id": "small-text",
+          "category": "responsive",
+          "severity": "warning",
+          "message": "text smaller than 12px on mobile"
+        }
+      ]
+    }
+  ],
+  "issues": [
+    {
+      "targets": [
+        "a.skip-link (126×34)",
+        "a.site-nav-brand (85×21)",
+        "a.hero-scroll (112×12)",
+        "a.six-footer__brand (98×26)",
+        "a.six-footer__link (86×14)"
+      ],
+      "viewport": "mobile 390x844",
+      "id": "tap-comfort",
+      "category": "responsive",
+      "severity": "warning",
+      "message": "5 target(s) below 44px (comfortable for the thumb)"
+    },
+    {
+      "targets": [
+        "a.skip-link (9px)",
+        "span (7px)",
+        "span (7px)",
+        "span (7px)",
+        "span (9px)",
+        "span (9px)",
+        "span (9px)",
+        "a.six-footer__link (9px)",
+        "span.six-footer__future (9px)",
+        "span (8px)",
+        "span.six-footer__future (9px)",
+        "span (8px)",
+        "span.six-footer__future (9px)",
+        "span (8px)",
+        "span.six-footer__future (9px)"
+      ],
+      "viewport": "mobile 390x844",
+      "id": "small-text",
+      "category": "responsive",
+      "severity": "warning",
+      "message": "text smaller than 12px on mobile"
+    },
+    {
+      "targets": [],
+      "id": "weight",
+      "category": "performance",
+      "severity": "error",
+      "viewport": "load",
+      "message": "12.6 MB transferred"
+    },
+    {
+      "targets": [],
+      "id": "js-weight",
+      "category": "performance",
+      "severity": "warning",
+      "viewport": "load",
+      "message": "11.8 MB of JavaScript"
+    },
+    {
+      "targets": [
+        "A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happe"
+      ],
+      "id": "console",
+      "category": "console",
+      "severity": "error",
+      "viewport": "all",
+      "message": "1 console error(s)"
+    },
+    {
+      "targets": [
+        "404 http://127.0.0.1:4173/assets/fraunces-latin-wght-normal-ukD16Tqj.woff2",
+        "net::ERR_ABORTED http://127.0.0.1:4173/assets/fraunces-latin-wght-normal-ukD16Tqj.woff2"
+      ],
+      "id": "network-fail",
+      "category": "console",
+      "severity": "warning",
+      "viewport": "load",
+      "message": "2 failed request(s)"
+    }
+  ],
+  "scores": {
+    "accessibility": 100,
+    "responsive": 90,
+    "performance": 81,
+    "console": 81,
+    "content": 100,
+    "seo": 100,
+    "motion": 100
+  },
+  "overall": 93,
+  "verdict": "rejected",
+  "perf": {
+    "cls": 0,
+    "lcpMs": 2468,
+    "lcpElement": "div.intro-word.intro-word--minimal",
+    "longTasks": 2,
+    "longTaskMs": 111,
+    "requests": 187,
+    "totalBytes": 13251461,
+    "jsBytes": 12340697,
+    "fontFiles": 7
+  },
+  "reportFile": "C:\\Users\\CLIENTE\\Downloads\\six-bullets-studio\\.parede\\audit\\2026-11-26T17-37-00\\audit.md"
+}

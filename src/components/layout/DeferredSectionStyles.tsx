@@ -48,12 +48,49 @@ export function DeferredSectionStyles() {
       { rootMargin: "500px" },
     );
 
-    for (const [id] of sectionStyles) {
-      const section = document.getElementById(id);
-      if (section) observer.observe(section);
+    let scrollFrame = 0;
+    const loadNearbySections = () => {
+      scrollFrame = 0;
+      for (const [id, href] of sectionStyles) {
+        const section = document.getElementById(id);
+        if (!section) continue;
+        const bounds = section.getBoundingClientRect();
+        if (bounds.top <= window.innerHeight + 500 && bounds.bottom >= -500) {
+          loadStylesheet(href);
+          observer.unobserve(section);
+        }
+      }
+    };
+    const scheduleNearbySections = () => {
+      if (!scrollFrame) scrollFrame = window.requestAnimationFrame(loadNearbySections);
+    };
+    window.addEventListener("scroll", scheduleNearbySections, { passive: true });
+    window.addEventListener("resize", scheduleNearbySections, { passive: true });
+
+    const observedSections = new Set<string>();
+    const observeSections = () => {
+      for (const [id] of sectionStyles) {
+        const section = document.getElementById(id);
+        if (!section || observedSections.has(id)) continue;
+        observer.observe(section);
+        observedSections.add(id);
+      }
+      scheduleNearbySections();
+      if (observedSections.size === sectionStyles.length) mutationObserver.disconnect();
+    };
+    const mutationObserver = new MutationObserver(observeSections);
+    observeSections();
+    if (observedSections.size !== sectionStyles.length) {
+      mutationObserver.observe(document.documentElement, { childList: true, subtree: true });
     }
 
-    return () => observer.disconnect();
+    return () => {
+      observer.disconnect();
+      mutationObserver.disconnect();
+      window.removeEventListener("scroll", scheduleNearbySections);
+      window.removeEventListener("resize", scheduleNearbySections);
+      if (scrollFrame) window.cancelAnimationFrame(scrollFrame);
+    };
   }, []);
 
   return null;

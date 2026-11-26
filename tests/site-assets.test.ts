@@ -92,6 +92,8 @@ test("below-fold section styles are loaded on approach rather than in global CSS
     assert.match(deferredStyles, new RegExp(section));
   }
   assert.match(deferredStyles, /new IntersectionObserver/);
+  assert.match(deferredStyles, /new MutationObserver/);
+  assert.match(deferredStyles, /loadNearbySections/);
   assert.match(deferredStyles, /rootMargin: "500px"/);
 });
 
@@ -354,6 +356,10 @@ test("navigation links match stable rendered heading targets and section order",
   assert.match(styles, /#about-title,[\s\S]*?scroll-margin-top: 6\.75rem/);
   assert.match(styles, /#happy-town-title[\s\S]*?scroll-margin-top: 9\.25rem/);
   assert.match(motionFeatures, /domAnimation/);
-  assert.doesNotMatch(route, /SectionStage|React\.lazy|<Suspense/);
+  assert.match(route, /const Team = lazy\(/);
+  assert.match(route, /const HappyTown = lazy\(/);
+  assert.match(route, /const FAQ = lazy\(/);
+  assert.match(route, /const Contact = lazy\(/);
+  assert.match(route, /<Suspense fallback=/);
   assert.doesNotMatch(root, /<SmoothScroll\s*\/>/);
 });
