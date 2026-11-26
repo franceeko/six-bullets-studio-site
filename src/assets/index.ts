@@ -17,6 +17,7 @@ export const images = {
   happyTownBanner: {
     type: "image",
     src: "/assets/team/happy-town-banner.webp",
+    src2x: "/assets/team/happy-town-banner@2x.webp",
     srcSet: [
       "/assets/team/happy-town-banner-480.webp 480w",
       "/assets/team/happy-town-banner-768.webp 768w",
