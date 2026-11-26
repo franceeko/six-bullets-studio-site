@@ -63,3 +63,5 @@ lighthouse-report.json
 
 .agents/
 repomix-output.xml
+
+.parede/
